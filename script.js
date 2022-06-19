@@ -1,5 +1,45 @@
 function SwitchEng(){
+  document.getElementById("myBar").style.display = "block";
+  move();
+
   history.pushState(null, null, "/keras1n/ru/index");
 
-  document.getElementByClassName("subtitle").innerText = "ja gay";
+  document.getElementById("subtitle").innerText = "веб дев | гейм дев";
+  document.getElementById("subtitle2").innerText = 'Эта страница была сделана просто потому что я не знаю какую ссылку подставлять под "Made by KeRas1n"';
+  document.getElementById("contact_btn").innerText = "Связаться со мной";
+  document.getElementById("web_title").innerText = "Веб";
+  document.getElementById("hooigle").innerHTML = '<p>Hooigle - твоя новая кастомизируемая и комфортная домашняя страница.</p> <p>В этом <span class="marked">single page application</span> вы сможете:</p>'+
+          "<ul>"+
+            "<li>выбрать поисковик</li>"+
+            "<li>полностью кастомизировать внешний вид</li>"+
+            "<li>добавлять виджеты по типу погоды и конвертера валют</li>"+
+            "<li>добавлять и редактировать закладки</li>"+
+          "</ul>"+
+          "<br>"+
+          'Вы можете использовать HOOIGLE как в веб-версии так и в качестве расширения для вашего браузера для авто замены новой вкладки.';
+  document.getElementById("games_title").innerText = "Игры";
+  document.getElementById("fnad").innerHTML = "<p>Пародия на FNAF с Дорой и Мэйби бейби. </p> Игра сделана по рофлу и на момент её создания я знал гораздо меньше о UNITY.";
+   document.getElementById("contact_title").innerText = "Связаться со мной";
+   document.getElementById("extra_title").innerText = "Тоже я";
+   document.getElementById("website_btn").innerHTML = 'Сайт <img src="ru/img/new-tab.png" width="18px">';
+
+}
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+        elem.style.display = "none";
+      } else {
+        (width++) + (width++) + (width++) + (width++);
+        elem.style.width = width + "%";
+      }
+    }
+  }
 }
