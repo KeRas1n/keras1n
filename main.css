@@ -262,3 +262,9 @@ a:hover{
 .list:hover{
 	margin-left: -20px;
 }
+
+@media only screen and (max-width: 900px) {
+  .main-block{
+  	width: 80%;
+  }
+}
