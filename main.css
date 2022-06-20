@@ -11,6 +11,18 @@ body{
  font-family: 'Roboto', sans-serif;
  font-size: 16px;
 }
+#myProgress {
+  width: 100%;
+  background: none;
+  height: 3px;
+}
+
+#myBar {
+	display: none;
+  width: 1%;
+  height: 3px;
+  background-color: #00ACDF;
+}
 .main-block{
 	animation-name: appearing;
   animation-duration: 1.3s;
