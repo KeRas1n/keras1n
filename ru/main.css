@@ -11,6 +11,18 @@ body{
  font-family: 'Roboto', sans-serif;
  font-size: 16px;
 }
+#myProgress {
+  width: 100%;
+  background: none;
+  height: 3px;
+}
+
+#myBar {
+	display: none;
+  width: 1%;
+  height: 3px;
+  background-color: #00ACDF;
+}
 .main-block{
 	animation-name: appearing;
   animation-duration: 1.3s;
@@ -101,6 +113,20 @@ header > h1, header > h3{
 	color: gray;
 	background-color: #ddd;
 	cursor: default;
+}
+.activated{
+	color: gray;
+	background-color: #ddd;
+	cursor: default;
+}
+.lang_btn{
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 16px;
+
+	width: 100%;
+	height: 40px;
 }
 .tg{
 	display: inline-block;
